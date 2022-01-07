@@ -8,6 +8,7 @@ namespace test
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Alege Operatie:");
+            // un branch
             Console.WriteLine("1.Adunare");
             Console.WriteLine("2.Scadere");
             Console.WriteLine("3.Inmultire");
@@ -15,8 +16,12 @@ namespace test
             Console.WriteLine("2.Ridicare la putere");
             Console.WriteLine("3.Radacina patrada");
             Console.WriteLine("1.Modul de x");
+
+            // un branch
             Console.WriteLine("2.Par / Impar");
             Console.WriteLine("3.Prim");
+
+            // un branch
             Console.WriteLine("3.Oglindit");
             Console.WriteLine("3.Palindrom");
             Console.WriteLine("3.SuperPalindrom");
