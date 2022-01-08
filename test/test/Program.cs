@@ -31,29 +31,57 @@ namespace test
 
             if (operatie == "1")
             {
-                Console.WriteLine("Ai ales operatia de adunare. Te rog alege valoarea lui A");
+                Console.WriteLine("Ai ales operatia de Adunare. Alege valoarea lui A");
                 Console.WriteLine("A=");
-                int a;
-                a = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(" Te rog alege valoarea lui B");
+                double a;
+                a = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine(" Alege valoarea lui B");
                 Console.WriteLine("B=");
-                int b;
-                b = Convert.ToInt32(Console.ReadLine());
+                double b;
+                b = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine($"A+B={a + b}");
             }
             if (operatie == "2")
             {
+                Console.WriteLine("Ai ales operatia de Scadere. Alege valoarea lui A");
                 Console.WriteLine("A=");
-                int a;
-                a = Convert.ToInt32(Console.ReadLine());
+                double a;
+                a = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine(" Alege valoarea lui B");
                 Console.WriteLine("B=");
-                int b;
-                b = Convert.ToInt32(Console.ReadLine());
+                double b;
+                b = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine($"A-B={a - b}");
             }
+            if (operatie == "3")
+            {
+                Console.WriteLine("Ai ales operatia de Inmultire. Alege valoarea lui A");
+                Console.WriteLine("A=");
+                double a;
+                a = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine(" Alege valoarea lui B");
+                Console.WriteLine("B=");
+                double b;
+                b = Convert.ToDouble(Console.ReadLine());
+                
+                Console.WriteLine($"A*B={a * b}");
+            }
+            if (operatie == "4")
+            {
+                Console.WriteLine("Ai ales operatia de Inpartire. Alege valoarea lui A");
+                Console.WriteLine("A=");
+                double a;
+                a = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine(" Alege valoarea lui B");
+                Console.WriteLine("B=");
+                double b;
+                b = Convert.ToDouble(Console.ReadLine());
 
+                Console.WriteLine($"A/B={a / b}");
+
+            }
         }
     }
 }
