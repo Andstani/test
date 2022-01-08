@@ -8,32 +8,34 @@ namespace test
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Alege Operatie:");
-            // un branch
+            // added branch "Operatii"
             Console.WriteLine("1.Adunare");
             Console.WriteLine("2.Scadere");
             Console.WriteLine("3.Inmultire");
-            Console.WriteLine("1.Impartire");
-            Console.WriteLine("2.Ridicare la putere");
-            Console.WriteLine("3.Radacina patrada");
-            Console.WriteLine("1.Modul de x");
+            Console.WriteLine("4.Impartire");
+            Console.WriteLine("5.Ridicare la putere");
+            Console.WriteLine("6.Radacina patrada");
+            Console.WriteLine("7.Modul de x");
 
             // un branch
-            Console.WriteLine("2.Par / Impar");
-            Console.WriteLine("3.Prim");
+            Console.WriteLine("8.Par / Impar");
+            Console.WriteLine("9.Prim");
 
             // un branch
-            Console.WriteLine("3.Oglindit");
-            Console.WriteLine("3.Palindrom");
-            Console.WriteLine("3.SuperPalindrom");
-            Console.WriteLine("3.Afiseaza numerele palindrom si superpalindrom intre 1 si 10000");
+            Console.WriteLine("10.Oglindit");
+            Console.WriteLine("11.Palindrom");
+            Console.WriteLine("12.SuperPalindrom");
+            Console.WriteLine("13.Afiseaza numerele palindrom si superpalindrom intre 1 si 10000");
 
             var operatie = Console.ReadLine();
 
             if (operatie == "1")
             {
+                Console.WriteLine("Ai ales operatia de adunare. Te rog alege valoarea lui A");
                 Console.WriteLine("A=");
                 int a;
                 a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(" Te rog alege valoarea lui B");
                 Console.WriteLine("B=");
                 int b;
                 b = Convert.ToInt32(Console.ReadLine());
