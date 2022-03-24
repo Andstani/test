@@ -159,9 +159,41 @@ namespace test
 
                     }
 
+                }
+                if (operatie == "10")
+                {
+                         Console.WriteLine("Ai ales sa afli oglinditul unui numar. Alege valoarea lui A");
+                         Console.WriteLine("A=");
+                         int a;
+                         a = Convert.ToInt32(Console.ReadLine());
+                    int b = a;
+                         int oglindit = 0;
+                         int reminder;
+     
+                         while (b > 0)
+                         {
+                             reminder = b % 10;
+                             oglindit = oglindit * 10 + reminder;
+                             b =  b / 10;
+                         }
+                             Console.WriteLine($"Oglinditul numarului {a} este {oglindit}");
+                }
+                if (operatie == "11")
+                {
+                    Console.WriteLine("Ai ales sa afli daca un numar este palindrom. Alege valoarea lui A");
+                    Console.WriteLine("A=");
+                    int a;
+                    a = Convert.ToInt32(Console.ReadLine());
 
+                    if (IsPalindrom(a))
+                    {
+                        Console.WriteLine($"{a} este numar palindrom");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{a} nu este numar palindrom");
 
-
+                    }
 
                 }
                 Console.ForegroundColor = ConsoleColor.White;
@@ -190,5 +222,32 @@ namespace test
             }
             return isPrime;
         }
+
+        private static bool IsPalindrom(int b)
+        {
+            bool isPalindrom = true;
+            int oglindit = 0;
+            int reminder;
+            int numar = b;
+
+            while (numar > 0)
+            {
+                reminder = numar % 10;
+                oglindit = oglindit * 10 + reminder;
+                numar = numar / 10;
+                
+            }
+
+            Console.WriteLine($"Oglinditul numarului {b} este {oglindit}");
+
+            if (b == oglindit)
+                isPalindrom = true;
+            else
+                isPalindrom = false;
+            return isPalindrom;
+            
+        
+        }
+
     }
-}
+}   
